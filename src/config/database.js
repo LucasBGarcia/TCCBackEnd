@@ -1,14 +1,15 @@
 module.exports = {
-    username: process.env.DB_USER,
-    dialect: process.env.DB_DIALECT,
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    port: process.env.DB_PORT,
+    username: 'easycaixa',
+    dialect: 'mysql',
+    // dialect: process.env.DB_DIALECT,
+    host: '54.233.123.29',
+    password: 'Lucasbg1!',
+    database: 'trocavidro',
+    port: 3306,
     define: {
         timestamps: true,
     },
 
     JWT_KEY: process.env.JWT_KEY
 };
-
 
