@@ -12,7 +12,7 @@ module.exports = {
       payment_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'payments', key: 'id' },
+        references: { model: 'Payments', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },

@@ -1,3 +1,24 @@
+// module.exports = {
+//     username: process.env.NAME,
+//     dialect: process.env.DIALECT,
+//     host: process.env.HOST,
+//     database: process.env.DATABASE,
+//     define: {
+//         timestamps: true,
+//     },
+// }
+
+// module.exports = {
+//     username: process.env.DB_USER,
+//     dialect: process.env.DB_DIALECT,
+//     host: process.env.DB_HOST,
+//     database: process.env.DB_NAME,
+//     define: {
+//         timestamps: true,
+//     },
+//     JWT_KEY: process.env.JWT_KEY
+// };
+
 module.exports = {
     username: 'easycaixa',
     dialect: 'mysql',
@@ -10,6 +31,6 @@ module.exports = {
         timestamps: true,
     },
 
-    JWT_KEY: process.env.JWT_KEY
+    JWT_KEY: 'SDSAUDSADUYDG * SADSADDASD * ASDSD'
 };
 

@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('services',
+    return queryInterface.bulkInsert('Services',
       [{
         service: 'Tela Completa',
         createdAt: new Date(),
@@ -31,6 +31,6 @@ module.exports = {
       ]);
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('services', null, {});
+    return queryInterface.bulkDelete('Services', null, {});
   }
 };
