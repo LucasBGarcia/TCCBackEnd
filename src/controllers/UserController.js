@@ -16,8 +16,6 @@ module.exports = {
         // faz a desestruturação do objeto req.body
         const { name, email, password } = req.body;
         // validação para os campos
-
-
         const dados = await User.findOne({ where: { email: email } })
         if (dados) {
             res.status(400).json({ erro: "E-mail já Cadastrado" });
@@ -43,7 +41,6 @@ module.exports = {
             res.status(400).json({ erro: "Login ou senha incorretos" });
             return;
         }
-
 
         // verifica se o e-mail já está cadastrado
         try {

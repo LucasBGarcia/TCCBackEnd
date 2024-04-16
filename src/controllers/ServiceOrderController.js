@@ -266,38 +266,6 @@ module.exports = {
             return res.status(500).json({ error: 'Internal server error' });
         }
     },
-
-    // async getOrdersEnded(req, res) {
-    //     try {
-    //         const servicesOrderEnded = await ServiceOrder_PaymentMethod.findAll({
-    //             include: [{
-    //                 association: 'pagamento'
-    //             },
-    //             {
-    //                 association: 'ordemServico',
-    //                 include: [{
-    //                     association: 'client'
-    //                 },
-    //                 {
-    //                     association: 'DeviceModel',
-    //                     include: [{
-    //                         association: 'DeviceBrand'
-    //                     }]
-    //                 },
-    //                 {
-    //                     association: 'service'
-    //                 }]
-    //             }]
-    //         });
-    //         if (servicesOrderEnded) {
-    //             return res.status(200).json(servicesOrderEnded);
-    //         }
-
-    //     } catch (error) {
-    //         return res.status(400).json({ msg: error.message });
-    //     }
-    // },
-
     async getPaymentMethods(req, res) {
         try {
             const paymentMethods = await PaymentMethod.findAll({});
@@ -333,7 +301,7 @@ module.exports = {
                 secure: false,
                 auth: {
                     user: 'barbozagarcia@outlook.com',
-                    pass: '09041997!'
+                    pass: process.env.EMAIL_PASSWORD
                 }
             })
 

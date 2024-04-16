@@ -41,16 +41,6 @@ module.exports = {
         return res.status(200).json(model);
 
     },
-
-    // async indexByDeviceBrand(req, res) {
-    //     const { DeviceBrand_id } = req.params;
-
-    //     const model = await DeviceModel.findAll({ where: { DeviceBrand_id: DeviceBrand_id } })
-
-    //     return res.status(200).json(model);
-
-    // },
-
     async indexByDeviceBrand(req, res) {
         try {
             const { DeviceBrand_id } = req.params;

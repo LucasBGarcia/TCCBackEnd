@@ -29,26 +29,6 @@ module.exports = {
             return res.status(400).json({ error: error.message });
         }
     },
-
-    // async indexByOrder(req, res) {
-    //     const { id } = req.params;
-
-    //     const model = await DeviceBrand.findByPk(id);
-
-    //     return res.status(200).json(model);
-
-    // },
-    // async indexByOrder(req, res) {
-    //     const { id } = req.params;
-    //     console.log("backend")
-    //     if (!id) {
-    //         return res.status(400).json({ error: error.message });
-    //     }
-    //     const model = await DeviceModel.findAll({ where: { DeviceBrand_id: id } });
-
-    //     return res.status(200).json(model);
-
-    // },
     async indexByOrder(req, res) {
         try {
             const { id } = req.params;
